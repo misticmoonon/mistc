@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monó</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>monó</h1>
+    <div class="carrinho">
+      Carrinho: <span id="total-itens">0</span> itens | Total: R$ <span id="total-valor">0.00</span>
+    </div>
+  </header>
+
+  <main>
+    <h2>Produtos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="lklk.jpg" alt="produto 1">
+        <h3>lalla</h3>
+        <p>capivara doida compre já o seu hahaha</p>
+        <button onclick="adicionarAoCarrinho('lalla', 59.90)">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <img src="jj.jpg" alt="Produto 2">
+        <h3>não sei</h3>
+        <p>R$ 199,90</p>
+        <button onclick="adicionarAoCarrinho('não sei', 199.90)">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <img src="blue.jpg" alt="Produto 3">
+        <h3>eita</h3>
+        <p>R$ 149,90</p>
+        <button onclick="adicionarAoCarrinho('eita', 149.90)">Adicionar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© monótimes.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
