@@ -9,6 +9,19 @@
 <body>
   <header>
     <h1>monó</h1>
+
+
+
+       <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Pesquisar">
+    <button onclick="pesquisar()">Buscar</button>
+</div>
+<p id="resultado"></p>
+
+
+
+
+
     <div class="carrinho">
       Carrinho: <span id="total-itens">0</span> itens | Total: R$ <span id="total-valor">0.00</span>
     </div>
@@ -16,6 +29,7 @@
 
   <main>
     <h2>Produtos</h2>
+    
     <div class="produtos">
       <div class="produto">
         <img src="lklk.jpg" alt="produto 1">
@@ -38,6 +52,14 @@
         <button onclick="adicionarAoCarrinho('eita', 149.90)">Adicionar</button>
       </div>
     </div>
+
+
+
+ 
+
+
+
+    
   </main>
 
   <footer>
@@ -47,4 +69,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-

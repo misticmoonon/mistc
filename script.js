@@ -1,4 +1,3 @@
-java
 let totalItens = 0;
 let totalValor = 0;
 
@@ -13,3 +12,31 @@ function adicionarAoCarrinho(nome, preco) {
 }
 
 
+
+// 🔍 Função para pesquisar produtos
+function pesquisar() {
+    let texto = document.getElementById("searchInput").value.toLowerCase();
+    let produtos = document.querySelectorAll(".produto");
+    let encontrou = false;
+
+    produtos.forEach(produto => {
+        let nomeProduto = produto.querySelector("h3").textContent.toLowerCase();
+
+        if (nomeProduto.includes(texto)) {
+            produto.style.display = "block"; // mostra
+            encontrou = true;
+        } else {
+            produto.style.display = "none"; // esconde
+        }
+    });
+
+    // Mostra mensagem de status da pesquisa
+    if (texto === "") {
+        document.getElementById("resultado").textContent = "";
+        produtos.forEach(p => p.style.display = "block"); // mostra tudo
+    } 
+    else if (!encontrou) {
+        document.getElementById("resultado").textContent = "Nenhum produto encontrado.";
+    } 
+
+}
