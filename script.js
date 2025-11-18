@@ -40,3 +40,26 @@ function pesquisar() {
     } 
 
 }
+
+function mostrarMensagem(texto) {
+  const aviso = document.createElement("div");
+  aviso.className = "msg-sucesso";
+  aviso.innerText = texto;
+
+  document.body.appendChild(aviso);
+
+  setTimeout(() => {
+    aviso.remove();
+  }, 2000);
+}
+
+function adicionarAoCarrinho(nome, preco) {
+  totalItens++;
+  totalValor += preco;
+
+  document.getElementById("total-itens").textContent = totalItens;
+  document.getElementById("total-valor").textContent = totalValor.toFixed(2).replace('.', ',');
+
+  mostrarMensagem(`${nome} adicionado ao carrinho!`);
+}
+
