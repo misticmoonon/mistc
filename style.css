@@ -14,9 +14,9 @@ body {
   float: left;
 }
 
-h4 {
+.nome {
   font-family: 'teste', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 header {
@@ -39,7 +39,7 @@ main {
 }
 
 .produto {
-  background: white;
+  background-image: linear-gradient(to bottom, #46245f, rgb(126, 82, 177) );
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
@@ -97,7 +97,7 @@ footer {
     padding: 8px;
     width: 200px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
 }
 
 .search-box button{
@@ -112,5 +112,17 @@ footer {
 
 .search-box button:hover{
     background: #333;
+
+}
+
+.lirio{
+margin-top: 60px;
+
+
+}
+
+.lirioimg{
+margin-top: 50px;
+
 
 }
