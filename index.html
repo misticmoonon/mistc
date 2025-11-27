@@ -1,73 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arcanus Relicarium</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
+  <title>Arcanus</title>
 </head>
 <body>
-  
-  <header>
-    <div class="logo">
-      <img src="Logo inicio.png" alt="Logo" width="90" height="90">
-      <h4>Arcanus Relicarium</h4>
+
+<header>
+  <div class="conteinertop"> 
+
+    <div class="logo"> <img src="images/Logo inicio.png" height="85px" width="100px" alt=""></div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Pesquisar">
+      <button onclick="pesquisar()">Buscar</button>
     </div>
-    
-      <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Pesquisar">
-    <button onclick="pesquisar()">Buscar</button>
-</div>
+
+    <div class="cadastro">
+      <img src="images/cadastro.png" height="80px" width="100px" alt="">
+      <a href="cadastro.html" class="links">Criar conta/Entrar</a>
+    </div>
+
+
+    <div class="carrinho-icon" onclick="abrirCarrinho()">
+      <img src="images/carrinhopn.png" height="85px" width="100px" class="icon-caldeirao" alt="Carrinho">
+      <span id="contadorCarrinho">0</span>
+    </div>
+    <p class="texcarrinho">Carrinho</p>
+
+  </div>
+</header>
+
 <p id="resultado"></p>
 
-    <div class="carrinho">
-  <img src="0caldeirao.png" width="150px" height="150px"><span id="total-itens">0</span> itens | Total: R$ <span id="total-valor">0.00</span>
+
+<div class="carrossel-container">
+
+  <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="2"></button>
     </div>
-  </header>
 
-  <main>
-    <h2>Produtos</h2>
+    <!-- Imagens -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img carrossel/img1.png" class="d-block w-100" alt="Imagem 1" >
+      </div>
+      <div class="carousel-item">
+        <img src="img carrossel/img2.png" class="d-block w-100" alt="Imagem 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img carrossel/img3.png" class="d-block w-100" alt="Imagem 3">
+      </div>
+    </div>
 
-    <div class="produtos">
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#meuCarrossel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
 
-      <div class="produto">
-        <img src="lklk.jpg" alt="Produto 1">
-        <h3>lalla</h3>
-        <p>capivara doida compre já o seu hahaha</p>
+    <button class="carousel-control-next" type="button" data-bs-target="#meuCarrossel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+</div>
+
+<div class="conteinermid">
+  <div class="icon1"> <img src="images/cartão.png" height="40px" width="40px" alt="cartão"> </div>
+    <p>Em até 3x sem juros</p>
+     <div class="icon2"> <img src="images/plane.png" height="40px" width="40px" alt="aviao"> </div>
+       <p>Entrega para todo o Mundo</p> 
+         <div class="icon3"> <img src="images/pay.png" height="40px" width="40px" alt="compra"> </div>
+           <p>compra 100% segura </p> 
+</div>
+
+ <div class="linha-texto">
+   <span>Novidades</span>
+ </div>
+
+ <div class="novidades"> 
+        <div class="produto">
+        <img src="produtos/grimore.png" width="100px" height="100px" alt="Produto 1">
+        <h3>Grimório</h3>
         <p class="preco">R$ 59,90</p>
-        <button onclick="adicionarAoCarrinho('lalla', 59.90)">Adicionar</button>
-      </div>
+        <button onclick="adicionarCarrinho('Grimório', 59.90)" class="button0" >Comprar</button>
+        </div>
 
       <div class="produto">
-        <img src="jj.jpg" alt="Produto 2">
-        <h3>não sei</h3>
+        <img src="produtos/caixa de musica.png" width="100px" height="100px" alt="Produto 2">
+        <h3>Caixinha de música</h3>
         <p>R$ 199,90</p>
-        <button onclick="adicionarAoCarrinho('não sei', 199.90)">Adicionar</button>
+        <button onclick="adicionarCarrinho('Caixinha de música', 199.90)" class="button0">Comprar</button>
       </div>
+    
 
       <div class="produto">
         <img src="blue.jpg" alt="Produto 3">
-        <h3>eita</h3>
+        <h3>Anel</h3>
         <p>R$ 149,90</p>
-        <button onclick="adicionarAoCarrinho('eita', 149.90)">Adicionar</button>
+        <button onclick="adicionarCarrinho('eita', 149.90)" class="button0">Comprar</button>
       </div>
 
       <div class="produto">
         <img src="blue.jpg" alt="Produto 4">
-        <h3>bao</h3>
+        <h3>Urna</h3>
         <p>R$ 109,90</p>
-        <button onclick="adicionarAoCarrinho('bao', 109.90)">Adicionar</button>
+        <button onclick="adicionarCarrinho('bao', 109.90)" class="button0">Comprar</button>
       </div>
+ </div>
 
-    </div>
-  </main>
+<div id="carrinhoPopup" class="carrinho-popup">
+  <h2>Seu Carrinho</h2>
+  <ul id="listaCarrinho"></ul>
+  <p>Total: R$ <span id="totalCarrinho">0.00</span></p>
+  <button onclick="fecharCarrinho()" class="button0">Fechar</button>
+  <button onclick="finalizarCompra()" class="button0" style="background-color:rgb(39, 1, 82); margin-top:10px;">Finalizar Compra</button>
+</div>
 
-  <footer>
-    <p>© Arcanus.</p>
-  </footer>
 
-  <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
-
-
