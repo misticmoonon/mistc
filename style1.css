@@ -68,14 +68,15 @@
 }
 
 .carrossel-container {
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 /* imagens do carrossel */
 
 .carousel-inner img {
-  height: 490px; 
+  height: 590px; 
   object-fit: cover;  
+  
 }
 
 .conteinermid{
