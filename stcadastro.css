@@ -153,7 +153,8 @@ transition: all 0.6s ease-in-out; }
  
  .container.active .toggle-right{ transform: translateX(200%); }
  
- .voltar{ background-color: #512da8;
+ .voltar{ 
+    background-color: #512da8;
    font-size: 12px; 
    padding: 10px 45px; 
    border: 1px solid transparent; 
@@ -163,3 +164,8 @@ transition: all 0.6s ease-in-out; }
     text-transform: uppercase;
      margin-top: 10px;
       cursor: pointer; }
+
+      .link{
+        color: white;
+        text-decoration: none;
+      }
