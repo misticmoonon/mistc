@@ -68,7 +68,7 @@
 }
 
 .carrossel-container {
-  margin-top: -10px;
+  margin-top: -17px;
 }
 
 /* imagens do carrossel */
@@ -237,9 +237,156 @@
   margin-left: -50px;
 }
 
+<<<<<<< HEAD
 
 .convert{
   background-color: white;
   height: 50px;
   width: 100px;
 }
+=======
+.rodape-arcanus {
+    width: 100%;
+    background: #0a0614; /* roxo quase preto */
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+    color: #d9c7ff;
+    border-top: 2px solid #6a0dad;
+    box-shadow: 0 0 25px #3e0a6e80 inset;
+}
+
+/* linha decorativa mágica */
+.linha-arcana {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto 20px auto;
+    background: linear-gradient(90deg,
+        transparent,
+        #a467ff,
+        #d8b4ff,
+        #a467ff,
+        transparent
+    );
+    box-shadow: 0 0 10px #b37bff;
+}
+
+/* texto dos direitos */
+.direitos {
+    font-size: 14px;
+    color: #e9d8ff;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.imgl {
+    display: block;
+    margin-left: 40px;/* deixa a logo no centro */
+    max-width: 200px;
+}
+
+/* Título "SOBRE" igual ao da imagem */
+.titulo-menu {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 1px;
+}
+
+/* Menu simples e alinhado à esquerda */
+.menu-sobre ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.menu-sobre ul li {
+    margin-bottom: 10px;
+}
+
+.menu-sobre ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+}
+
+.menu-sobre ul li a:hover {
+    text-decoration: underline;
+}
+
+.newsletter {
+    background: #3A2842; /* roxo escuro igual da imagem */
+    padding: 40px 20px;
+}
+
+.newsletter-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Lado esquerdo (ícone + texto) */
+.newsletter-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter-icon {
+    width: 100px;
+}
+
+.newsletter-text h2 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+.newsletter-text p {
+    color: #d5cde0;
+    margin-top: 5px;
+}
+
+/* Formulário à direita */
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 450px;
+    padding: 15px 45px 15px 15px;
+    border: none;
+    font-size: 16px;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+}
+
+/* Botão ENVIAR */
+.btn-news {
+    background: white;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+>>>>>>> 776dda96208dd8e4dc4acc6c5a7b3909f19a6dd3
