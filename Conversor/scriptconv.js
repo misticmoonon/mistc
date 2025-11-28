@@ -8,7 +8,7 @@ function converter() {
     }
 
     // Taxas de câmbio aproximadas (exemplo)
-    const taxas = {
+const taxas = {
         USD: 900,   // 1 USD → 900 AOA
         EUR: 980,   // 1 EUR → 980 AOA
         GBP: 1150,  // 1 GBP → 1150 AOA
@@ -23,10 +23,19 @@ function converter() {
 }
 
 /* 
-Para usar taxas reais automaticamente, substitua as taxas por:
+teste
 fetch(`https://api.exchangerate-api.com/v4/latest/${moeda}`)
    .then(r => r.json())
    .then(dados => {
         let taxa = dados.rates["AOA"];
    });
+
+
+    const taxas = {
+        USD: 900,   // 1 USD → 900 AOA
+        EUR: 980,   // 1 EUR → 980 AOA
+        GBP: 1150,  // 1 GBP → 1150 AOA
+        BRL: 180,   // 1 BRL → 180 AOA
+        CNY: 125    // 1 CNY → 125 AOA
+    };
 */

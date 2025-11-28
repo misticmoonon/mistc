@@ -18,14 +18,20 @@ body {
 
 .container {
     background: rgb(122, 122, 122);
-    padding: 25px;
-    width: 350px;
+    height: 600px;
+    width: 500px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     text-align: center;
+    box-shadow: 0 10px 30px white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-input, select, button {
+
+button {
     width: 100%;
     padding: 12px;
     margin-top: 12px;
@@ -34,11 +40,33 @@ input, select, button {
     font-size: 16px;
 }
 
+input{
+    border-radius: 6px;
+    height: 40px;
+    width: 400px;
+    border: none;
+    margin-top: 100px;
+}
+
+select{
+    border-radius: 6px;
+    height: 40px;
+    width: 400px;
+    border: none;
+    margin-top: 40px
+}
+
+p{
+    margin-top: -150px;
+    font-size: 40px;
+}
+
 button {
     background: linear-gradient(to right, #380a4d, #2c073d);
     color: #ffffff;
     font-size: 12px;
-    padding: 10px 45px;
+    height: 40px;
+    width: 400px;
     border: 1px solid transparent;
     border-radius: 8px;
     font-weight: 600;
