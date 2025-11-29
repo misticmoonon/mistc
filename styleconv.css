@@ -57,7 +57,7 @@ select{
 }
 
 p{
-    margin-top: -150px;
+    margin-top: -110px;
     font-size: 40px;
 }
 
@@ -80,4 +80,10 @@ button {
 
 h3 {
     margin-top: 20px;
+}
+
+.voltar {
+    text-decoration: none;
+    color: white;
+    
 }
