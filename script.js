@@ -10,7 +10,7 @@ function calcularTotal() {
 function adicionarCarrinho(nome, preco) {
     const index = carrinho.findIndex(item => item.nome === nome);
 
-    if(index >= 0) {
+    if (index >= 0) {
         carrinho[index].quantidade += 1;
     } else {
         carrinho.push({ nome, preco, quantidade: 1 });
@@ -61,7 +61,7 @@ function atualizarCarrinho() {
 function alterarQuantidade(index, delta) {
     carrinho[index].quantidade += delta;
 
-    if(carrinho[index].quantidade <= 0) {
+    if (carrinho[index].quantidade <= 0) {
         carrinho.splice(index, 1);
     }
 
@@ -81,26 +81,28 @@ function removerItem(index) {
 function abrirCarrinho() {
     document.getElementById("carrinhoPopup").style.display = "block";
 }
+
 function fecharCarrinho() {
     document.getElementById("carrinhoPopup").style.display = "none";
 }
 
 function finalizarCompra() {
-    if(carrinho.length === 0) {
+    if (carrinho.length === 0) {
         alert("Seu carrinho está vazio!");
         return;
     }
+
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
     localStorage.setItem('total', total.toFixed(2));
     window.location.href = "checkout.html";
 }
 
-// Atualiza quando a página carrega
+// Atualiza ao carregar a página
 calcularTotal();
 atualizarCarrinho();
 
 
-// Buscar produtos
+// 🔍 Buscar produtos
 function pesquisar() {
     let texto = document.getElementById("searchInput").value.toLowerCase();
     let produtos = document.querySelectorAll(".produto");
@@ -120,8 +122,14 @@ function pesquisar() {
     if (texto === "") {
         document.getElementById("resultado").textContent = "";
         produtos.forEach(p => p.style.display = "block");
-    } 
-    else if (!encontrou) {
-        document.getElementById("resultado").textContent = ("Nenhum produto encontrado");
+    } else if (!encontrou) {
+        document.getElementById("resultado").textContent = "Nenhum produto encontrado";
     }
 }
+
+function abrirProduto(id) {
+    window.location.href = "produto.html?id=" + id;
+}
+
+
+
