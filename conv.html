@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor para Kwanza</title>
+    <link rel="stylesheet" href="styleconv.css">
+</head>
+<body>
+
+    <div class="container">
+        <p>Conversor de Moedas</p>
+
+        <div class="converter">
+            <input type="number" id="valor" placeholder="Valor" />
+
+            <select id="moeda">
+                <option value="USD">USD - Dólar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - Libra</option>
+                <option value="BRL">BRL - Real</option>
+                <option value="CNY">CNY - Yuan</option>
+            </select>
+
+            <button onclick="converter()">Converter</button>
+
+            <h3 id="resultado">Valor em Kwanza: —</h3>
+        </div>
+
+        <button><a href="index.html" class="voltar">Voltar</a></button>
+
+
+    </div>
+
+    <script src="scriptconv.js"></script>
+</body>
+</html>

@@ -36,13 +36,21 @@ function atualizarCarrinho() {
 
     carrinho.forEach((item, index) => {
         lista.innerHTML += `
-            <li>
-                ${item.nome} - R$ ${item.preco.toFixed(2)} x ${item.quantidade}
-                <button onclick="alterarQuantidade(${index}, -1)">-</button>
-                <button onclick="alterarQuantidade(${index}, 1)">+</button>
-                <span class="remove-btn" onclick="removerItem(${index})">X</span>
-            </li>
-        `;
+    <li>
+        <div>
+            ${item.nome} - R$ ${item.preco.toFixed(2)}
+        </div>
+
+        <div class="quantidade-container">
+            <button class="btn-quantidade" onclick="alterarQuantidade(${index}, -1)">-</button>
+            <span class="quantidade-numero">${item.quantidade}</span>
+            <button class="btn-quantidade" onclick="alterarQuantidade(${index}, 1)">+</button>
+        </div>
+
+        
+    </li>
+`;
+
     });
 
     totalElement.textContent = total.toFixed(2);
@@ -78,7 +86,10 @@ function fecharCarrinho() {
     document.getElementById("carrinhoPopup").style.display = "none";
 }
 
+<<<<<<< HEAD
 // Finalizar compra
+=======
+>>>>>>> e0f1b2ca201ddaa0ffc7d8cffce1c33ab8ed6034
 function finalizarCompra() {
     if (carrinho.length === 0) {
         alert("Seu carrinho está vazio!");

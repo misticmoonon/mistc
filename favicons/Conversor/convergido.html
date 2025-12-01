@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<title>Arcanus - Conversor de Moedas</title>
+
+<style>
+    body {
+        background: #111;
+        color: #eee;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 40px;
+    }
+
+    h1 {
+        color: #d4af37;
+        letter-spacing: 2px;
+    }
+
+    .box {
+        background: #222;
+        padding: 25px;
+        width: 350px;
+        margin: auto;
+        border-radius: 10px;
+        border: 2px solid #d4af37;
+    }
+
+    input, select, button {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: none;
+    }
+
+    button {
+        background: #d4af37;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #b8932f;
+    }
+
+    #resultado {
+        margin-top: 15px;
+        font-size: 1.2em;
+        color: #d4af37;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Arcanus - Conversor de Moedas</h1>
+
+<div class="box">
+    <label>Valor:</label>
+    <input type="number" id="valor" placeholder="Digite o valor">
+
+    <label>Moeda:</label>
+    <select id="moeda">
+        <option value="BRL">Real (BRL)</option>
+        <option value="USD">Dólar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="GBP">Libra (GBP)</option>
+        <option value="CNY">Yuan (CNY)</option>
+    </select>
+
+    <button onclick="converter()">Converter</button>
+
+    <p id="resultado"></p>
+</div>
+
+<script>
+// Taxas fictícias — substitua por valores reais quando quiser
+const taxas = {
+    BRL: 150,   // 1 Real = 150 Kwanzas
+    USD: 850,   // 1 USD = 850 Kwanzas
+    EUR: 900,   // 1 Euro = 900 Kwanzas
+    GBP: 1100,  // 1 Libra = 1100 Kwanzas
+    CNY: 120    // 1 Yuan = 120 Kwanzas
+};
+
+function converter() {
+    const valor = parseFloat(document.getElementById("valor").value);
+    const moeda = document.getElementById("moeda").value;
+    const resultBox = document.getElementById("resultado");
+
+    if (!valor) {
+        resultBox.innerHTML = "Por favor, digite um valor.";
+        return;
+    }
+
+    const convertido = valor * taxas[moeda];
+    resultBox.innerHTML = `${convertido.toLocaleString()} AOA`;
+}
+</script>
+
+</body>
+</html>

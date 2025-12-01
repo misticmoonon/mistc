@@ -209,3 +209,16 @@ ul{
     font-weight: 600;
     letter-spacing: 0.5px;
 }
+nav{
+    background: #0a0614;
+    padding: 12px 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 0 10px #6a0dad;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
