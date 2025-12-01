@@ -103,17 +103,6 @@
    <span>Novidades</span>
  </div>
 
-<div class="novidades"> 
-
-    <div class="produto" onclick="abrirProduto('grimorio')">
-        <img src="produtos/grimore.png" width="100px" height="100px" alt="Produto 1">
-        <h3>Grimório</h3>
-        <p class="preco">R$ 59,90</p>
-        <button onclick="event.stopPropagation(); adicionarCarrinho('Grimório', 59.90)" class="button0">Comprar</button>
-    </div>
-
-    <div class="produto" onclick="abrirProduto('caixa-musica')">
-        <img src="produtos/caixa de musica.png" width="100px" height="100px" alt="Produto 2">
  <div class="novidades"> 
         <div class="produto">
          <img src="produtos/grimore.png" width="100px" height="100px" alt="Grimório">
@@ -126,25 +115,24 @@
         <img src="produtos/caixa de musica.png" width="100px" height="100px" alt="Caixinha de música">
         <h3>Caixinha de música</h3>
         <p>R$ 199,90</p>
-        <button onclick="event.stopPropagation(); adicionarCarrinho('Caixinha de música', 199.90)" class="button0">Comprar</button>
-    </div>
+        <button onclick="adicionarCarrinho('Caixinha de música', 199.90)" class="button0">Comprar</button>
+      </div>
+    
 
-    <div class="produto" onclick="abrirProduto('anel')">
-        <img src="produtos/anel.png" width="100px" height="100px" alt="Produto 3">
-        <h3>Anel</h3>
+      <div class="produto">
+        <img src="produtos/capivara magica 1.png" width="100px" height="100px" alt="Capivara">
+        <h3>Capivara magica</h3>
         <p>R$ 149,90</p>
-        <button onclick="event.stopPropagation(); adicionarCarrinho('Anel', 149.90)" class="button0">Comprar</button>
-    </div>
+        <button onclick="adicionarCarrinho('Capivara Magica', 149.90)" class="button0">Comprar</button>
+      </div>
 
-    <div class="produto" onclick="abrirProduto('urna')">
-        <img src="produtos/urna.png" width="100px" height="100px" alt="Produto 4">
-        <h3>Urna</h3>
+      <div class="produto">
+        <img src="produtos/espelho.png" width="100px" height="100px" alt="Espelho">
+        <h3>Espelho</h3>
         <p>R$ 109,90</p>
-        <button onclick="event.stopPropagation(); adicionarCarrinho('Urna', 109.90)" class="button0">Comprar</button>
-    </div>
-
-</div>
-
+        <button onclick="adicionarCarrinho('Espelho', 109.90)" class="button0">Comprar</button>
+      </div>
+ </div>
 
 <div id="carrinhoPopup" class="carrinho-popup">
   <h2>Seu Carrinho</h2>
@@ -153,17 +141,6 @@
   <button onclick="fecharCarrinho()" class="button0">Fechar</button>
   <button onclick="finalizarCompra()" class="button0" style="background-color:rgb(39, 1, 82); margin-top:10px;">Finalizar Compra</button>
 </div>
-<section class="newsletter">
-    <div class="newsletter-content">
-
-        <div class="newsletter-left">
-            <img src="images/Logo inicio.png" alt="Ícone" class="newsletter-icon">
-
-            <div class="newsletter-text">
-                <h2>PROMOÇÕES EXCLUSIVAS!</h2>
-                <p>Inscreva-se e fique por dentro das novidades.</p>
-            </div>
-        </div>
 
 <div class="banner"> 
  <img src="images/bannerpromo.png"  height="400px" alt="">  
@@ -200,7 +177,6 @@
 <nav class="menu-sobre">
     <ul>
         <li><a href="sobre.html">Sobre nós</a></li>
-        <li><a href="comprar.html">Como Comprar</a></li>
     </ul>
 </nav>
 
