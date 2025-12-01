@@ -332,7 +332,9 @@
 
 
 .convert{
-  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   height: 80px;
   width: 100px;
 }
@@ -485,6 +487,7 @@
 .convtex{
   color:white;
   margin-top: 10px;
+  
 }
 
 .banner{ 
