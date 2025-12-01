@@ -86,10 +86,6 @@ function fecharCarrinho() {
     document.getElementById("carrinhoPopup").style.display = "none";
 }
 
-<<<<<<< HEAD
-// Finalizar compra
-=======
->>>>>>> e0f1b2ca201ddaa0ffc7d8cffce1c33ab8ed6034
 function finalizarCompra() {
     if (carrinho.length === 0) {
         alert("Seu carrinho está vazio!");
