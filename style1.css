@@ -18,6 +18,18 @@
   padding: 0 20px;
 }
 
+.categorias{
+  background-color: rgb(83, 52, 104);
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 2%;
+  margin-top: -17px;
+}
+
+
 .logo{
   
   height: 80px;
@@ -226,9 +238,9 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 10%;
-
+  gap: 8%;
 }
+
 
 .button0{
     background: linear-gradient(to right, #380a4d, #2c073d);
@@ -473,8 +485,6 @@
 .convtex{
   color:white;
   margin-top: 10px;
-  position: absolute;
-  margin-left: 60%;
 }
 
 .banner{ 
