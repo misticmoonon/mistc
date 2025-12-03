@@ -110,7 +110,53 @@ body {
 }
 
 
+/* caixa de frete */
 
+.frete-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    background: #f7f7fc;
+    border: 1px solid #c9c9d4;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.frete-box h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.frete-inputs {
+    display: flex;
+    gap: 5px;
+}
+
+.frete-box input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #7a5ba8;
+    border-radius: 6px;
+}
+
+.frete-box button {
+    padding: 8px 12px;
+    background: #55228a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.frete-box button:hover {
+    background: #6f35b8;
+}
+
+#resultadoFrete {
+    margin-top: 10px;
+    font-size: 15px;
+}
 
 
 

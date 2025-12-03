@@ -38,7 +38,7 @@ function atualizarCarrinho() {
         lista.innerHTML += `
     <li>
         <div>
-            ${item.nome} - Kz ${item.preco.toFixed(4)}
+            ${item.nome} - Kz ${item.preco.toFixed(3)}
         </div>
 
         <div class="quantidade-container">
@@ -53,7 +53,7 @@ function atualizarCarrinho() {
 
     });
 
-    totalElement.textContent = total.toFixed(4);
+    totalElement.textContent = total.toFixed(3);
     contador.textContent = carrinho.reduce((acc, item) => acc + item.quantidade, 0);
 }
 
@@ -93,7 +93,7 @@ function finalizarCompra() {
     }
 
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    localStorage.setItem('total', total.toFixed(4));
+    localStorage.setItem('total', total.toFixed(3));
     window.location.href = "checkout.html";
 }
 
