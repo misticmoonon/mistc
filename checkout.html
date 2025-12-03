@@ -22,7 +22,7 @@
 <div class="checkout-container">
   <h2>Resumo da Compra</h2>
   <ul id="resumoCarrinho"></ul>
-  <p>Total: R$ <span id="totalCompra">0.00</span></p>
+  <p>Total: Kz <span id="totalCompra">0.00</span></p>
 
   <h3>Informações do Cliente</h3>
   <input type="text" id="nomeCliente" placeholder="Nome completo" class="form-control">
@@ -74,11 +74,11 @@
 
   const resumoCarrinho = document.getElementById('resumoCarrinho');
   const totalCompra = document.getElementById('totalCompra');
-  totalCompra.textContent = total.toFixed(2);
+  totalCompra.textContent = total.toFixed(4);
 
   carrinho.forEach(item => {
       const li = document.createElement('li');
-      li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)} x ${item.quantidade}`;
+      li.textContent = `${item.nome} - Kz ${item.preco.toFixed(4)} x ${item.quantidade}`;
       resumoCarrinho.appendChild(li);
   });
 
@@ -107,11 +107,11 @@
 
       if (i <= 3) {
         valorParcela = total / i;
-        texto = `${i}x sem juros de R$ ${valorParcela.toFixed(2)}`;
+        texto = `${i}x sem juros de Kz ${valorParcela.toFixed(4)}`;
       } else {
         // cálculo com juros compostos
         valorParcela = (total * Math.pow(1 + juros, i)) / i;
-        texto = `${i}x com juros de R$ ${valorParcela.toFixed(2)}`;
+        texto = `${i}x com juros de Kz ${valorParcela.toFixed(4)}`;
       }
 
       const option = document.createElement('option');

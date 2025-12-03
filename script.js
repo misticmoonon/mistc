@@ -38,7 +38,7 @@ function atualizarCarrinho() {
         lista.innerHTML += `
     <li>
         <div>
-            ${item.nome} - R$ ${item.preco.toFixed(2)}
+            ${item.nome} - Kz ${item.preco.toFixed(4)}
         </div>
 
         <div class="quantidade-container">
@@ -53,7 +53,7 @@ function atualizarCarrinho() {
 
     });
 
-    totalElement.textContent = total.toFixed(2);
+    totalElement.textContent = total.toFixed(4);
     contador.textContent = carrinho.reduce((acc, item) => acc + item.quantidade, 0);
 }
 
@@ -93,7 +93,7 @@ function finalizarCompra() {
     }
 
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    localStorage.setItem('total', total.toFixed(2));
+    localStorage.setItem('total', total.toFixed(4));
     window.location.href = "checkout.html";
 }
 
@@ -131,6 +131,3 @@ function abrirProduto(id) {
     window.location.href = "produto.html?id=" + id;
 }
 
-
-function enviar() {
-    
