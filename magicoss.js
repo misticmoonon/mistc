@@ -38,7 +38,7 @@ function atualizarCarrinho() {
         lista.innerHTML += `
     <li>
         <div>
-            ${item.nome} - R$ ${item.preco.toFixed(2)}
+            ${item.nome} - R$ ${item.preco.toFixed(3)}
         </div>
 
         <div class="quantidade-container">
@@ -53,7 +53,7 @@ function atualizarCarrinho() {
 
     });
 
-    totalElement.textContent = total.toFixed(2);
+    totalElement.textContent = total.toFixed(3);
     contador.textContent = carrinho.reduce((acc, item) => acc + item.quantidade, 0);
 }
 
