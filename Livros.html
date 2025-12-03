@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="csslivros.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
-  <title>Arcanus</title>
+  <title>Livros</title>
 </head>
 <body>
 
 <header>
   <div class="conteinertop"> 
 
-    <div class="logo"> <img src="images/Logo inicio.png" height="85px" width="100px" alt=""></div>
+    <div class="logo">
+      <a href="index.html"> 
+      <img src="images/Logo inicio.png" height="85px" width="100px" alt="">
+      </a>
+    </div>
 
     <div class="search-box">
       <input type="text" id="searchInput" placeholder="Pesquisar">
@@ -44,10 +48,11 @@
 <p id="resultado"></p>
 
 <section>
-  <div class="categorias" >
-    <p class="texcat"><a class="texcat" href="Livros.html"> Livros</a></p>
+  <div class="categorias">
+   <p class="texcat"><a class="texcat" href="Livros.html"> Livros</a></p>
     <p class="texcat"><a class="texcat" href="magicos.html" > Items magicos</a></p>
     <p class="texcat"><a class="texcat" href="estatua.html">Estatuas</a></p>
+
   </div>
 </section>
 
@@ -92,50 +97,37 @@
   <div class="icon1"> <img src="images/cartão.png" height="40px" width="40px" alt="cartão"> </div>
     <p>Em até 3x sem juros</p>
      <div class="icon2"> <img src="images/plane.png" height="40px" width="40px" alt="aviao"> </div>
-       <p>Entrega para todo o Brasil</p> 
+       <p>Entrega para todo o Mundo</p> 
          <div class="icon3"> <img src="images/pay.png" height="40px" width="40px" alt="compra"> </div>
            <p>compra 100% segura </p> 
 </div>
 
  <div class="linha-texto">
-   <span>Novidades</span>
+   <span>Livros</span>
  </div>
 
- <div class="novidades"> 
-        <div class="produto">
-         <img src="produtos/grimore.png" width="100px" height="100px" alt="Grimório">
-         <h3>Grimório</h3>
-         <p class="preco">Kz 20.000,00</p>
-         <button onclick="adicionarCarrinho('Grimório', 20.000)" class="button0" >Comprar</button>
-        </div>
 
       <div class="produto">
-        <img src="produtos/caixa de musica.png" width="100px" height="100px" alt="Caixinha de música">
-        <h3>Caixinha de música</h3>
-        <p>Kz 16.999,99</p>
-        <button onclick="adicionarCarrinho('Caixinha de música', 16.999)" class="button0">Comprar</button>
-      </div>
-    
-
-      <div class="produto">
-        <img src="produtos/capivara magica 1.png" width="100px" height="100px" alt="Capivara">
+        <img src="produtos/grimore.png" width="200px" height="200px" alt="Capivara ">
         <h3>Capivara magica</h3>
         <p>Kz 9.000,90</p>
-        <button onclick="adicionarCarrinho('Capivara Magica', 9.000)" class="button0">Comprar</button>
+        <button onclick="adicionarCarrinho('Capivara Magica', 149.90)" class="button0">Comprar</button>
       </div>
 
+
       <div class="produto">
-        <img src="produtos/espelho.png" width="100px" height="100px" alt="Espelho">
-        <h3>Espelho</h3>
-        <p>Kz 45.540,48</p>
-        <button onclick="adicionarCarrinho('Espelho', 45.540)" class="button0">Comprar</button>
+        <img src="produtos/Grimore2.png" width="200px" height="200px" alt="unicornio">
+        <h3>Estatua unicornio</h3>
+        <p>R$ 13.000,10</p>
+        <button onclick="adicionarCarrinho('Estatua unicrnio', 13.000,10)" class="button0">Comprar</button>
       </div>
- </div>
+
+
 
 <div id="carrinhoPopup" class="carrinho-popup">
   <h2>Seu Carrinho</h2>
   <ul id="listaCarrinho"></ul>
-  <p>Total: Kz <span id="totalCarrinho">0.00</span></p>
+  <p>Total: R$ <span id="totalCarrinho">0.00</span></p>
   <button onclick="fecharCarrinho()" class="button0">Fechar</button>
   <button onclick="finalizarCompra()" class="button0" style="background-color:rgb(39, 1, 82); margin-top:10px;">Finalizar Compra</button>
 </div>
@@ -156,58 +148,38 @@
             </div>
         </div>
 
-        <div id="teste" class="newsletter-form">
+        <div class="newsletter-form">
             <div class="input-wrapper">
                 <input type="email" placeholder="Digite seu melhor E-mail:">
                 <img src="images/plane.png" class="input-icon">
             </div>
 
-            <button class="btn-news" onclick="enviar()">ENVIAR</button>
+            <button class="btn-news">ENVIAR</button>
         </div>
 
     </div>
 </section>
 
-<div class="fot">
- <div class="esq"> 
-  <img src="images/logo3.png" alt="" class="imgl">
+<img src="images/Logo inicio2.png" alt="" class="imgl">
 
 <h3 class="titulo-menu">SOBRE</h3>
 
 <nav class="menu-sobre">
     <ul>
         <li><a href="sobre.html">Sobre nós</a></li>
-        <li><a href="politica.html">Política de privacidade</a></li>
-        <li><a href="termos.html">Termos de serviço</a></li>
     </ul>
 </nav>
- </div>
-
-<div class="center">
-  <h2>Central de Atendimento</h2>
-   <p>loja presencial</p>
-    <p>Rua das Bromélias, nº 247<br>
-       Bairro Centro<br>
-       Floresta Azul – BA<br>
-       CEP: 45795-000</p>
-       <p>Whatsapp (11) 4002-8922 </p> 
-</div> 
-
-<div class="dir">
-  <h2>Formas de pagamento</h2>
-  <img src="images/pagamento_3.png" alt="">
-
-</div>
-</div>
 
 
 <footer class="rodape-arcanus">
   <div class="linha-arcana"></div>
+
   <p class="direitos">© 2025 Arcanus Relicarium — Todos os direitos reservados.</p>
+  
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+<script src="livrosjj.js"></script>
 
 </body>
 </html>
