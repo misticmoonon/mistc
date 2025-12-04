@@ -8,36 +8,43 @@
     <title>Sobre Nós</title>
 </head>
 <body>
-   <header class="header-arcanus">
+  <header>
   <div class="conteinertop"> 
 
-    <!-- Logo clicável -->
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/Logo inicio.png" height="85" width="100" alt="Logo">
-      </a>
+    <div class="logo"> 
+     <a href="index.html">  
+      <img src="images/Logo inicio.png" height="85px" width="100px" alt="">
+       </a>
     </div>
 
-    <!-- Barra de pesquisa -->
     <div class="search-box">
       <input type="text" id="searchInput" placeholder="Pesquisar">
       <button onclick="pesquisar()">Buscar</button>
     </div>
 
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="cadastro.html">Cadastro</a>
-    </nav>
+    <div class="cadastro">
+      <img src="images/cadastro.png" height="80px" width="100px" alt="">
+      <a href="cadastro.html" class="links">Criar conta/Entrar</a>
+    </div>
+
+
+    <div class="carrinho-icon" onclick="abrirCarrinho()">
+      <img src="images/carrinhopn.png" height="85px" width="100px" class="icon-caldeirao" alt="Carrinho">
+      <span id="contadorCarrinho">0</span>
+    </div>
+    <p class="texcarrinho">Carrinho</p>
+
+    <div class="convert"> 
+      <a href="conv.html"><img src="images/trem.png" height="40px" width="50px" alt=""></a>
+      <p class="convtex">Conversor</p>
+    </div>
     
 
   </div>
-
-  <!-- Linha decorativa -->
-  <div class="linha-arcana-top"></div>
 </header>
 
 
-
+<div class="conteinernos">
     <h1>Quem Somos</h1>
     <p>
         Na Arcanus Relicarium, somos guardiões de artefatos raros, relíquias esquecidas e itens imbuídos de energia arcana. 
@@ -45,7 +52,7 @@
         mistérios de eras antigas. Cada peça em nossa loja é escolhida com cuidado, preservando sua essência mágica para que 
         encontre o dono certo — talvez você.
     </p>
-
+        <br>
     <h3>Missão, Visão e Valores</h3>
 
     <p>
@@ -53,12 +60,13 @@
         itens únicos que carregam histórias, poder e significado. Buscamos unir encanto, tradição e conhecimento arcano 
         em cada aquisição.
     </p>
+          <br>
 
     <p>
         <strong>Visão:</strong> Tornar-se a principal referência em relíquias místicas e itens esotéricos, reconhecida pela excelência, 
         autenticidade e curadoria cuidadosa, inspirando exploradores e colecionadores em todo o mundo.
     </p>
-
+          <br>
     <p>
         <strong>Valores:</strong>
     </p>
@@ -71,7 +79,11 @@
         <li>Preservação — Cuidado com itens raros e antigos.</li>
     </ul>
 
-   <footer class="rodape-arcanus">
+</div>
+
+
+    <footer class ="rodape-arcanus">
+
   <div class="linha-arcana"></div>
 
   <p class="direitos">© 2025 Arcanus Relicarium — Todos os direitos reservados.</p>

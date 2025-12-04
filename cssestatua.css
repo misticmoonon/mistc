@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10%;
 }
 
 .esq{
@@ -45,6 +46,7 @@
   flex-direction: column;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande
 }
+
 
 .conteinertop{
   background-color: black;
